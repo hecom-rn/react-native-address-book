@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author         = package['author']
   s.homepage       = "https://github.com/hecom-rn/react-native-address-book.git"
   s.source       = { :git => "https://github.com/hecom-rn/react-native-address-book.git", :tag => s.version }
-  s.source_files  = "./*.{h,m}"
+  s.source_files  = "ios/**/*.{h,m}"
   s.platform      = :ios, "9.0"
 
   s.dependency 'React'
