@@ -345,7 +345,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/callinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - RNAddressBook (from `../node_modules/react-native-address-book/ios/RNAddressBook.podspec`)
+  - RNAddressBook (from `../node_modules/react-native-address-book/RNAddressBook.podspec`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -413,7 +413,7 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   RNAddressBook:
-    :podspec: "../node_modules/react-native-address-book/ios/RNAddressBook.podspec"
+    :podspec: "../node_modules/react-native-address-book/RNAddressBook.podspec"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -453,10 +453,10 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
-  RNAddressBook: b3beb49d0882f651c22a7dfdeaca440563cbdf66
+  RNAddressBook: 9e64b2d26c5154d7e7390c4564dbb43e5c85a150
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 90be37137d387fa03b3ab1a09910da51353f2928
+PODFILE CHECKSUM: 5055176456e7b52014839a9c1d2f743813af4f69
 
 COCOAPODS: 1.8.4
