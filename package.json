@@ -1,0 +1,28 @@
+{
+  "name": "@hecom/react-native-address-book",
+  "version": "0.0.1",
+  "description": "调用原生通讯录获取联系人",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hecom-rn/react-native-address-book.git"
+  },
+  "scripts": {
+    "patch": "npm version patch -m 'Bump version %s';git push origin master --tags",
+    "minor": "npm version minor -m 'Bump version %s';git push origin master --tags",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "React-Native",
+    "addressbook",
+    "react-native-contacts",
+    "通讯录"
+  ],
+  "author": "Hecom",
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.50"
+  },
+  "homepage": "https://github.com/hecom-rn/react-native-address-book#readme"
+}
