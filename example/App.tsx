@@ -28,8 +28,8 @@ const App = () => {
       <View style={{justifyContent: 'center', alignItems: 'center', flex: 1}}>
         <TouchableHighlight onPress={() => {
           AddressBook.getContact()
-            .then((email) => {
-              console.log("email is", email);
+            .then((contact) => {
+              console.log("email is", contact);
             })
             .catch((error: { code: any; message: any; }) => {
               console.log("ERROR CODE: ", error.code);
