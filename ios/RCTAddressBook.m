@@ -2,7 +2,7 @@
 //  RCTAddressBook.h
 //  RCTAddressBook
 //
-//  Created by Hecom on 15/06/2020/6/17.
+//  Created by Hecom on 2020/6/17.
 //
 
 #import "RCTAddressBook.h"
@@ -18,7 +18,7 @@
 @implementation RCTAddressBook
 
 
-RCT_EXPORT_MODULE(ContactsWrapper);
+RCT_EXPORT_MODULE(AddressBook);
 
 RCT_EXPORT_METHOD(getContact:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
@@ -66,11 +66,6 @@ RCT_EXPORT_METHOD(getContact:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromis
 
 
 #pragma mark - RN Promise Events
-
-- (void)pickerCancelled {
-  self._reject(@"E_CONTACT_CANCELLED", @"Cancelled", nil);
-}
-
 - (void)unauthorized {
   self._reject(@"E_CONTACT_UNAUTHORIZED", @"Unauthorized", nil);
 }
@@ -112,10 +107,6 @@ RCT_EXPORT_METHOD(getContact:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromis
   }
 
   [self contactPicked:contactData];
-}
-
-- (void)contactPickerDidCancel:(CNContactPickerViewController *)picker {
-  [self pickerCancelled];
 }
 @end
 
