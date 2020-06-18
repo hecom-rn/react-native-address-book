@@ -292,7 +292,7 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
     - ReactCommon/callinvoker (= 0.62.2)
-  - RNAddressBook (0.0.1):
+  - RNAddressBook (0.0.2):
     - React
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -453,7 +453,7 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
-  RNAddressBook: 9e64b2d26c5154d7e7390c4564dbb43e5c85a150
+  RNAddressBook: f3bbb518c5080536edf576e2f19e6f3e61c78c23
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

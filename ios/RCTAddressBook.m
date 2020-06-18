@@ -1,13 +1,13 @@
 //
-//  RCTContactsWrapper.h
-//  RCTContactsWrapper
+//  RCTAddressBook.h
+//  RCTAddressBook
 //
 //  Created by Hecom on 15/06/2020/6/17.
 //
 
-#import "RCTContactsWrapper.h"
+#import "RCTAddressBook.h"
 #import <ContactsUI/ContactsUI.h>
-@interface RCTContactsWrapper()<CNContactPickerDelegate>
+@interface RCTAddressBook()<CNContactPickerDelegate>
 
 @property(nonatomic, copy) RCTPromiseResolveBlock _resolve;
 @property(nonatomic, copy) RCTPromiseRejectBlock _reject;
@@ -15,7 +15,7 @@
 @end
 
 
-@implementation RCTContactsWrapper
+@implementation RCTAddressBook
 
 
 RCT_EXPORT_MODULE(ContactsWrapper);
