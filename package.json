@@ -1,6 +1,6 @@
 {
   "name": "@hecom/react-native-address-book",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "调用原生通讯录获取联系人",
   "main": "src/index.ts",
   "repository": {
