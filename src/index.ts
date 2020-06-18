@@ -4,14 +4,14 @@ interface Contact {
     name: string;
     phone: Array<string>;
 }
-interface callFunc { (params: string | object | void): Promise<object> }
-function nativeCall(func: callFunc, data?: object): Promise<Contact>{
+interface callFunc { <T>(params: string | object | void): Promise<T> }
+function nativeCall<T>(func: callFunc, data?: object): Promise<T>{
     const isIOS = Platform.OS === 'ios';
     if (data === undefined) {
-        return <Promise<Contact>>func();
+        return func();
     } else {
         const params = isIOS ? JSON.stringify(data) : data;
-        return <Promise<Contact>>func(params);
+        return func(params);
     }
 }
 
@@ -21,4 +21,4 @@ const AddressBook = ReactNative.NativeModules.AddressBook;
  * 获取联系人
  * 错误类型 code:E_CONTACT_UNAUTHORIZED; msg:Unauthorized 未授权
  */
-export const getContact = () =>nativeCall(AddressBook.getContact);
+export const getContact = () =>nativeCall<Contact>(AddressBook.getContact);
