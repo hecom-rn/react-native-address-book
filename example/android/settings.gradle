@@ -1,3 +1,5 @@
 rootProject.name = 'ReactNativeAddressBook'
+include ':react-native-address-book'
+project(':react-native-address-book').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-address-book/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'

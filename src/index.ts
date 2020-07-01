@@ -1,4 +1,5 @@
-import ReactNative, { Platform } from 'react-native'
+import ReactNative, { Platform ,  PermissionsAndroid,
+} from 'react-native'
 
 interface Contact {
     name: string;
