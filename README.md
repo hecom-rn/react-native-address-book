@@ -4,4 +4,4 @@
 [![Build Status](https://travis-ci.org/hecom-rn/react-native-address-book.svg?branch=master)](https://travis-ci.org/hecom-rn/react-native-address-book)
 
 ## react-native-address-book
-调用原生通讯录获取联系人
+调用原生通讯录，获取联系人
