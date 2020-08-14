@@ -29,6 +29,7 @@ import com.facebook.react.bridge.ReadableMapKeySetIterator;
 import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ViewManager;
+import com.facebook.react.bridge.WritableArray;
 
 public class ContactsWrapper extends ReactContextBaseJavaModule implements ActivityEventListener {
 
@@ -161,13 +162,20 @@ public class ContactsWrapper extends ReactContextBaseJavaModule implements Activ
                             int dataIdx = cursor.getColumnIndex(ContactsContract.Contacts.Entity.DATA1);
                             int mimeIdx = cursor.getColumnIndex(ContactsContract.Contacts.Entity.MIMETYPE);
                             if (cursor.moveToFirst()) {
+                                WritableArray array = Arguments.createArray();
                                 do {
                                     mime = cursor.getString(mimeIdx);
                                     if(returnKeys.containsKey(mime)) {
-                                        contactData.putString((String) returnKeys.get(mime), cursor.getString(dataIdx));
+                                        String k = returnKeys.get(mime);
+                                        if ("phone".equals(k)) {
+                                            array.pushString(cursor.getString(dataIdx));
+                                        } else {
+                                            contactData.putString((String) returnKeys.get(mime), cursor.getString(dataIdx));
+                                        }
                                         foundData = true;
                                     }
                                 } while (cursor.moveToNext());
+                                contactData.putArray("phone", array);
                             }
 
                             cursor.close();
