@@ -10,12 +10,12 @@ stages:
    if: tag =~ ^v
 
 jobs:
-  include:
-    - stage: test
-    - stage: deploy
-      deploy:
-        provider: npm
-        email: summer88123@163.com
-        api_key: "$NPM_TOKEN"
-        on:
-          tags: true
+ include:
+   - stage: test
+   - stage: deploy
+     deploy:
+       provider: npm
+       email: gaoxiaosong06@gmail.com
+       api_key: "$NPM_TOKEN"
+       on:
+         tags: true
